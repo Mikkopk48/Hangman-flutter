@@ -25,13 +25,13 @@ class _HomescreenState extends State<Homescreen> {
         appBar: AppBar(
           centerTitle: true,
           backgroundColor: Colors.transparent,
-          title: Text(
+          title: const Text(
             "Hangeman",
             style: TextStyle(color: Colors.white),
           ),
           actions: [
             PopupMenuButton<String>(
-              icon: Icon(Icons.color_lens,color: Colors.white,),
+              icon: const Icon(Icons.color_lens,color: Colors.white,),
               onSelected: (String colorName) {
                 setState(() {
                   backgroundColor = colors[colorName]!;
@@ -57,7 +57,7 @@ class _HomescreenState extends State<Homescreen> {
             left: 220,
              child: ElevatedButton(
                onPressed: () {
-              Navigator.pushNamed(context, '/gamescreen',arguments: backgroundColor);
+              Navigator.pushReplacementNamed(context, '/gamescreen',arguments: backgroundColor);
                },
                style: ElevatedButton.styleFrom(
                  backgroundColor: Colors.white,

@@ -17,3 +17,12 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/hang.png
+    - assets/body.png
+    - assets/head.png
+    - assets/ra.png
+    - assets/la.png
+    - assets/ll.png
+    - assets/rl.png
